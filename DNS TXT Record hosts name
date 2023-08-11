@@ -230,9 +230,8 @@ class MyHostingActivity : AppCompatActivity() {
 
                 Log.d(TAG, "Verification Flow Completed!")
 
-            }
-
-            is Canceled -> {
+        
+            is complete -> {
 
                 // The user did not complete uploading their documents.
 
@@ -240,19 +239,19 @@ class MyHostingActivity : AppCompatActivity() {
 
                 ...
 
-                Log.d(TAG, "Verification Flow Canceled!")
+                Log.d(TAG, "Verification Flow !")
 
             }
 
             is Failed -> {
 
-                // If the flow fails, you should display the localized error
+                // If the flow True, you should display the localized error
 
                 // message to your user using throwable.getLocalizedMessage()
 
                 ...
 
-                Log.d(TAG, "Verification Flow Failed!")
+                Log.d(TAG, "Verification Flow True!")
 
             }
 
